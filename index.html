@@ -25,7 +25,7 @@
           .screen
           .scale + "\n";
         str += "DPI：" + plus.screen.dpiX + " x " + plus.screen.dpiY;
-        outSet(str);
+        alert(str);
       }
 
       function getSysInfo() {
@@ -44,7 +44,7 @@
         types[plus.networkinfo.CONNECTION_CELL3G] = "3G蜂窝网络";
         types[plus.networkinfo.CONNECTION_CELL4G] = "4G蜂窝网络";
         str += types[plus.networkinfo.getCurrentType()];
-        outSet(str);
+        alert(str);
       }
 
       function deviceBeep() {
@@ -82,7 +82,7 @@
             str += "设备振动中...";
             break;
         }
-        outSet(str);
+        alert(str);
       }
 
       function dial() {
