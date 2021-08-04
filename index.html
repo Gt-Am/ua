@@ -7,13 +7,17 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <button id="btn">ttttip</button>
 </body>
 <script>
-  if (window.plus) {
-    alert('true');
-  } else {
-    alert('false');
-  }
+    document.addEventListener( "plusready", onPlusReady, false ); // onPlusReady 函数中就可以引用plus对象
+    function onPlusReady() {
+        if (window.plus) {
+        alert('true');
+      } else {
+        alert('false');
+      }
+    }
+    document.querySelector('#btn').onclick = onPlusReady;
 </script>
 </html>
